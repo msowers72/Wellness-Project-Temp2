@@ -241,12 +241,14 @@ h6 {
 
 .navbar .dropdown ul li {
   min-width: 200px;
+  
 }
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 15px;
   text-transform: none;
+  
 }
 
 .navbar .dropdown ul a i {
@@ -257,6 +259,13 @@ h6 {
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
   color: #4F709C;
+ 
+}
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a.custom-a {
+  color: gold;
+ 
 }
 
 .navbar .dropdown:hover>ul {
@@ -276,6 +285,7 @@ h6 {
   top: 0;
   left: 100%;
   visibility: visible;
+  
 }
 
 @media (max-width: 1366px) {
@@ -2504,14 +2514,15 @@ ul .custom-drop p {
   background-color: #213555;
   color: #fff;
   max-width: 200px;
+ 
 }
 
 ul .custom-drop.li  {
   padding: 10px;
-  /* font-weight: bold; */
+  font-weight: bold;
   background-color: #213555;
   color: #fff;
-  max-width: 210px;
+  max-width: 150px;
   
 }
 
