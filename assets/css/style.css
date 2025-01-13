@@ -486,6 +486,7 @@ h6 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+    
   }
 }
 
@@ -493,7 +494,7 @@ h6 {
 
 @media (max-width: 768px) {
   #hero {
-    height: 100vh;
+    height: 50vh;
   }
 
   #hero.w-hero {
@@ -559,6 +560,17 @@ h6 {
 @media (max-width: 375px) {
   #hero h2 {
     font-size: 14px;
+  }
+  .none {
+    display: none;
+  }
+
+  .new-logo.custom-footer img {
+    height: 50px;
+  }
+
+  .new-logo.custom-footer h3 {
+    font-size: 2rem;
   }
 }
 
@@ -2548,7 +2560,11 @@ ul .custom-drop.li .custom-link a {
   margin-right: 10px;
 }
 
-
+@media(max-width: 1280px) {
+  .about .container {
+    margin-top: 35px;
+  }
+}
 
 @media (max-width: 1024px) {
   .services-nav {
@@ -2558,7 +2574,9 @@ ul .custom-drop.li .custom-link a {
 .search-services button {
   position: relative;
 }
-
+.about.about-custom {
+ margin-top: 50px;
+}
 }
 
 
