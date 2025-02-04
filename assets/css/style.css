@@ -16,11 +16,19 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
 body {
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Roboto", sans-serif;
   color: #213555;
+  
 }
+body.active1 {
+  background-color: #fff;
+}
+
+
 
 a {
   color: #213555;
@@ -43,8 +51,12 @@ h6 {
 
 #main {
   margin-top: 30px;
-  z-index: 3;
+  /* z-index: 3;  */
   position: relative;
+  background-color: #FAF9F6;
+}
+#main.active1 {
+  background-color: var(--outer-space);
 }
 
 .work-process.about-page {
@@ -158,6 +170,35 @@ h6 {
   font-weight: 400;
   color: #213555
 }
+
+
+/* For the custom pages */
+#header.active1 {
+  background-color: var(--outer-space);
+  
+}
+
+#header.active1 a, p {
+  color:  #213555;
+}
+
+#header.active1 a.change-text {
+  color: #fff;
+}
+
+#header.active1 a.change-text:hover {
+  color: var(--armyyellow);
+}
+
+#header.active1 p.custom-text {
+  color: #fff;
+}
+
+
+#header .navbar .iam-active1 {
+  background-color: var(--outer-space);
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -483,11 +524,50 @@ h6 {
   display: none;
 }
 
+@media(min-width: 1366px) {
+  #hero h2 {
+    font-size: 2.5rem;
+    max-width: 785px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #hero#hero#hero  {
+    height: 75vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  #hero.hero.hero {
+    height: 100vh
+  }
+}
+
+@media (min-width: 1200px) {
+  #hero.hero  {
+    height: 85vh;
+  }
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+    height: 100vh;
     
   }
+  #hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
 }
 
 
@@ -507,10 +587,11 @@ h6 {
   }
 
   #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.5rem;
+    line-height: 1.2;
     margin-bottom: 30px;
-    max-width: 450px;
+    max-width: 475px;
+    
   }
   .no-break {
     display: block;
@@ -518,6 +599,7 @@ h6 {
 
   #hero .hero-container {
     padding: 0 15px;
+    margin-top: 90px;
   }
 }
 
@@ -527,25 +609,6 @@ h6 {
   }
    
 }
-
-@media(max-width: 430px) {
-  #hero {
-    height: 60vh;
-  }
-}
-
-@media(max-width: 430px) {
-  #hero.w-hero {
-    height: 55vh;
-  }
-}
-
-@media(max-width: 390px) {
-  #hero {
-    height: 70vh;
-}
-}
-
 
 @media (max-width: 500px) {
   #hero h2 {
@@ -557,9 +620,31 @@ h6 {
   }
 }
 
+@media(max-width: 430px) {
+  #hero {
+    height: 60vh;
+  }
+  #hero.w-hero {
+    height: 55vh;
+  }
+}
+
+
+
+@media(max-width: 390px) {
+  #hero {
+    height: 80vh;
+}
+}
+
 @media (max-width: 375px) {
+
+  #hero h2.special-message {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
   #hero h2 {
-    font-size: 14px;
+    font-size: 1.15rem;
   }
   .none {
     display: none;
@@ -583,6 +668,11 @@ h6 {
 section {
   padding-bottom: 60px;
   overflow: hidden;
+}
+
+section.about.about-custom {
+  
+  margin-top: 100px;
 }
 
 .section-bg {
@@ -823,6 +913,10 @@ section {
   padding: 25px 0;
 }
 
+.cta.active1 {
+  background: var(--outer-space);
+}
+
 .cta h3 {
   color: #fff;
   font-size: 3rem;
@@ -831,6 +925,7 @@ section {
 
 .cta p {
   color: #fff;
+  font-size: 1.2rem;
 }
 
 .cta .cta-btn {
@@ -2256,6 +2351,13 @@ section {
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
+  width: 100vw;
+ 
+  overflow: hidden;
+}
+
+#footer.active1 {
+  background: var(--outer-space);
 }
 
 #footer .footer-top {
@@ -2263,6 +2365,10 @@ section {
   padding: 30px 0 15px 0;
 }
 
+#footer .footer-top.active1 {
+  background: var(--outer-space)
+  
+}
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
 }
@@ -2538,6 +2644,11 @@ ul .custom-drop.li  {
   
 }
 
+ul .custom-drop.li.active1 {
+  background-color: var(--outer-space);
+}
+
+
 ul .custom-drop.li .custom-link a {
   color: inherit;
   text-decoration: none;
@@ -2560,13 +2671,239 @@ ul .custom-drop.li .custom-link a {
   margin-right: 10px;
 }
 
+/* This is the styles for the popup box */
+.popup {
+   max-width: 450px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 20px 20px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 14px 28px 0px rgba(0,0,0,0.25),
+0px 10px 10px 0px rgba(0,0,0,0.22);
+  color: #213555;
+  border-radius: 10px;
+  
+  /* display: none; */
+}
+
+.popup button {
+  display: block;
+  margin: 0 0 0 auto;
+  background-color: transparent;
+  color: #c5c5c5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+
+}
+
+.popup p {
+  font-size: 1rem;
+  text-align: justify;
+  margin: 0 0;
+}
+
+/* #header.active1 a, p.custom-para-text {
+  color: #213555;
+} */
+
+#hero h2.special-message {
+  margin-bottom: 10px;
+ 
+}
+.lg-red-text {
+  font-weight: bold;
+  color: red;
+  font-size: 1.2rem;
+  
+}
+
+/*******************************************  Begin css for the diagram link pages *****************************/
+:root {
+  --outer-space: #33393f;
+  --bright-turquoise: #2aefcb;
+  --gin: #e0eae4;
+  --heliotrope: #e866ec;
+  --armyyellow: #ffc107
+}
+
+/* set content highlight color and background */
+::selection {
+  background-color: var(--bright-turquoise);
+  color: var(--outer-space);
+}
+
+.the-main {
+  width: 100%;
+  margin: 2rem auto 0;
+ 
+}
+
+/* Section intro styles */
+.section-intro  {
+  position: relative;
+  margin-top: 90px;
+  text-align: center;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+.section-intro.active1 {
+  background-color: var(--outer-space);
+  color: var(--armyyellow);
+  
+}
+
+.section-intro.active1 p {
+  
+  color: var(--armyyellow);
+}
+
+h1.page-title {
+  padding: 1rem 1.2rem;
+  font-size: 1.5rem;
+}
+
+.section-intro p {
+  font-size: 1.2rem;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
+
+
+.section-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  color: var(--gin);
+  background-color: var(--outer-space);
+  padding-top: 30px;
+  width: 100vw;
+}
+
+.section-justify-center {
+  justify-content: center;
+}
+
+/* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+.section-card-column {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
+.section-code-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 2rem;
+  color: var(--armyyellow);
+  background-color: var(--outer-space);
+  /* outline is like border, but on the outside of the box instead of inside */
+  outline: 2px dashed var(--gin);
+  outline-offset: -2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-code-card .section-card-header {
+  /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+  position: relative;
+  margin: -4rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--outer-space);
+  color: var(--armyyellow);
+  border: 2px solid var(--gin);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-card:hover,
+.section-card-header {
+  box-shadow: inset 0px 0px 8px var(--armyyellow), 0 0 15px var(--armyyellow);
+}
+
+h1.page-title img.usarmylogo {
+  width: 250px;
+}
+
+h1.page-title img.anatglogo {
+  width: 150px;
+}
+
+ul.nbhrl li:last-child a {
+  color: #fff;
+}
+
+
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .section-card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .section-card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  
+
+  .section-card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding: 2rem;
+  }
+}
+
+/**************************************************************************************************************************************  End css for the diagram link pages******************************************************** */
+
+
+
+
 @media(max-width: 1280px) {
   .about .container {
     margin-top: 35px;
   }
+  .section-code-card .section-card-header {
+    font-size: 1.5rem;
+}
 }
 
 @media (max-width: 1024px) {
+  
+ .bi.bi-list.mobile-nav-toggle {
+  color: #fff;
+ }
+ .bi.bi-list.mobile-nav-toggle.index {
+  color: #213555;
+}
+
+ #header.active1 a.change-text {
+  color: #213555;
+}
+
+#header.active1 a.change-text.mobile {
+  color: #fff;
+}
+
+#header .navbar .iam-active1 {
+  background-color: #fff;
+}
   .services-nav {
     display: block;
    

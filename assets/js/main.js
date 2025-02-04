@@ -499,6 +499,36 @@ const gameData = [
   
 ];
 
+// code for the popup box
+// window.addEventListener("load", () => {
+//   setTimeout(
+//       function open(event) {
+//           document.querySelector(".popup").style.display = "block";
+//       }, 1000
+//   )
+// })
+
+var x = window.matchMedia("(max-width: 768px)")
+var y = window.matchMedia("(max-width: 390px)")
+
+document.querySelector("#close").addEventListener("click", () => {
+  document.querySelector(".popup").style.display = "none";
+  document.querySelector("#hero").style.height = "60vh";
+
+  if (x.matches) { // If media query matches
+    document.querySelector("#hero").style.height = "25vh";
+    document.querySelector("h2.hero-para").style.fontSize = "1.5rem";
+  } 
+
+  if(y.matches) {
+    document.querySelector("#hero").style.height = "40vh";
+    document.querySelector("h2.hero-para").style.fontSize = "1rem";
+  }
+ 
+})
+
+
+
 // display all dynamic data
 // window.addEventListener("DOMContentLoaded", () => {
 //   displayGameData(gameData);
