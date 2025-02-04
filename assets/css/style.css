@@ -40,6 +40,10 @@ a:hover {
   text-decoration: none;
 }
 
+#header a:hover {
+  color: var(--armyyellow);
+}
+
 h1,
 h2,
 h3,
@@ -56,7 +60,7 @@ h6 {
   background-color: #FAF9F6;
 }
 #main.active1 {
-  background-color: var(--outer-space);
+  background-color: #faf9f6;
 }
 
 .work-process.about-page {
@@ -174,29 +178,29 @@ h6 {
 
 /* For the custom pages */
 #header.active1 {
-  background-color: var(--outer-space);
+  background-color: #fff;
   
 }
 
-#header.active1 a, p {
+/* #header.active1 a, p {
   color:  #213555;
-}
+} */
 
-#header.active1 a.change-text {
-  color: #fff;
-}
+/* #header.active1 a.change-text {
+  color: #213555;
+} */
 
 #header.active1 a.change-text:hover {
   color: var(--armyyellow);
 }
 
 #header.active1 p.custom-text {
-  color: #fff;
+  color: #213555;
 }
 
 
 #header .navbar .iam-active1 {
-  background-color: var(--outer-space);
+  background-color: #fff;
 }
 
 
@@ -473,6 +477,7 @@ h6 {
 }
 
 #hero .hero-container {
+  position: relative;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -533,7 +538,7 @@ h6 {
 
 @media (min-width: 1440px) {
   #hero#hero#hero  {
-    height: 75vh;
+    height: 50vh;
   }
 }
 
@@ -558,7 +563,7 @@ h6 {
   #hero .hero-container {
     position: absolute;
     bottom: 0;
-    top: 60px;
+    top: 0px;
     left: 0;
     right: 0;
     display: flex;
@@ -914,7 +919,7 @@ section.about.about-custom {
 }
 
 .cta.active1 {
-  background: var(--outer-space);
+  background: #213555;
 }
 
 .cta h3 {
@@ -2357,7 +2362,7 @@ section.about.about-custom {
 }
 
 #footer.active1 {
-  background: var(--outer-space);
+  background: #213555;
 }
 
 #footer .footer-top {
@@ -2365,10 +2370,7 @@ section.about.about-custom {
   padding: 30px 0 15px 0;
 }
 
-#footer .footer-top.active1 {
-  background: var(--outer-space)
-  
-}
+
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
 }
@@ -2644,9 +2646,7 @@ ul .custom-drop.li  {
   
 }
 
-ul .custom-drop.li.active1 {
-  background-color: var(--outer-space);
-}
+
 
 
 ul .custom-drop.li .custom-link a {
@@ -2673,7 +2673,9 @@ ul .custom-drop.li .custom-link a {
 
 /* This is the styles for the popup box */
 .popup {
-   max-width: 450px;
+   max-width: 600px;
+   height: auto;
+   
   margin-top: 20px;
   margin-bottom: 30px;
   padding: 20px 20px;
@@ -2682,7 +2684,7 @@ ul .custom-drop.li .custom-link a {
 0px 10px 10px 0px rgba(0,0,0,0.22);
   color: #213555;
   border-radius: 10px;
-  
+  position: absolute;
   /* display: none; */
 }
 
@@ -2694,14 +2696,15 @@ ul .custom-drop.li .custom-link a {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 2rem;
+ font-size: 2rem;
 
 }
 
 .popup p {
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: justify;
-  margin: 0 0;
+  margin: 0  0;
+  
 }
 
 /* #header.active1 a, p.custom-para-text {
@@ -2710,13 +2713,19 @@ ul .custom-drop.li .custom-link a {
 
 #hero h2.special-message {
   margin-bottom: 10px;
- 
+  font-size: 3.5rem;
 }
 .lg-red-text {
   font-weight: bold;
-  color: red;
+  color: #DC143C;
   font-size: 1.2rem;
   
+}
+
+.lg-red-text-header {
+  font-weight: bold;
+  color: #CD143C;
+  font-size: 2.5rem;
 }
 
 /*******************************************  Begin css for the diagram link pages *****************************/
@@ -2725,8 +2734,9 @@ ul .custom-drop.li .custom-link a {
   --bright-turquoise: #2aefcb;
   --gin: #e0eae4;
   --heliotrope: #e866ec;
-  --armyyellow: #ffc107
-}
+  --armyyellow: #ffc107;
+  --blue: #213555;
+} 
 
 /* set content highlight color and background */
 ::selection {
@@ -2751,14 +2761,14 @@ ul .custom-drop.li .custom-link a {
 }
 
 .section-intro.active1 {
-  background-color: var(--outer-space);
+  background-color: #213555;
   color: var(--armyyellow);
   
 }
 
 .section-intro.active1 p {
   
-  color: var(--armyyellow);
+  color: #fff;
 }
 
 h1.page-title {
@@ -2782,7 +2792,7 @@ h1.page-title {
   margin-left: 0rem;
   margin-right: 0rem;
   color: var(--gin);
-  background-color: var(--outer-space);
+  background-color: #faf9f6;
   padding-top: 30px;
   width: 100vw;
 }
@@ -2806,8 +2816,8 @@ h1.page-title {
   justify-content: flex-start;
   min-height: 100%;
   padding: 2rem;
-  color: var(--armyyellow);
-  background-color: var(--outer-space);
+  color: #fff;
+  background-color: #213555;
   /* outline is like border, but on the outside of the box instead of inside */
   outline: 2px dashed var(--gin);
   outline-offset: -2px;
@@ -2819,8 +2829,8 @@ h1.page-title {
   position: relative;
   margin: -4rem 0 1.5rem 0;
   padding: 0.5rem 1rem;
-  background-color: var(--outer-space);
-  color: var(--armyyellow);
+  background-color: #213555;
+  color: #fff;
   border: 2px solid var(--gin);
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
@@ -2828,7 +2838,7 @@ h1.page-title {
 
 .section-card:hover,
 .section-card-header {
-  box-shadow: inset 0px 0px 8px var(--armyyellow), 0 0 15px var(--armyyellow);
+  box-shadow: inset 0px 0px 8px var(--blue), 0 0 15px var(--blue);
 }
 
 h1.page-title img.usarmylogo {
@@ -2872,10 +2882,44 @@ ul.nbhrl li:last-child a {
 
 /**************************************************************************************************************************************  End css for the diagram link pages******************************************************** */
 
+@media(max-width: 1600px) {
+  #hero h2.special-message {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+.popup {
+  top: 30px;
+}
+#hero .hero-container {
+  top: 35px;
+}
+}
 
-
+@media(max-width: 1366px) {
+  #hero.hero.hero {
+    height: 65vh;
+}
+}
 
 @media(max-width: 1280px) {
+  .lg-red-text-header {
+    
+    font-size: 1.55rem;
+}
+
+#hero .hero-container {
+  top: 80px;
+}
+
+.popup {
+  top: -11px;
+}
+
+.popup p {
+  font-size: 1.3rem;
+  text-align: justify;
+  margin: 0  0;
+}
   .about .container {
     margin-top: 35px;
   }
@@ -2884,11 +2928,28 @@ ul.nbhrl li:last-child a {
 }
 }
 
+@media(max-width: 1200px) {
+  #hero.hero.hero {
+    height: 55vh;
+}
+.popup p {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: 0  0;
+}
+.lg-red-text-header {
+  font-weight: bold;
+  color: #CD143C;
+  font-size: 2.0rem;
+}
+}
+
 @media (max-width: 1024px) {
+  #hero.hero.hero {
+    height: 65vh;
+}
   
- .bi.bi-list.mobile-nav-toggle {
-  color: #fff;
- }
+ 
  .bi.bi-list.mobile-nav-toggle.index {
   color: #213555;
 }
@@ -2918,12 +2979,55 @@ ul.nbhrl li:last-child a {
 
 
 @media (max-width: 768px) {
+  .popup {
+    top: -30px;
+}
+
+  #hero.hero.hero {
+    height: 40vh;
+}
+#hero h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+#hero h2 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  max-width: 475px;
+}
+
   .products_wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 5rem 0;
     gap: 2rem; 
   }
+}
+
+@media (max-width: 500px) {
+  .popup {
+    top: -47px;
+}
+  #hero.hero.hero {
+    height: 50vh;
+}
+  #hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  #hero h2 {
+    font-size: 1.6rem;
+  }
+
+  #hero .hero-container {
+    top: 5px;
+}
+.lg-red-text-header {
+  font-size: 1.0rem;
+}
 }
 
 @media (max-width: 428px) {
