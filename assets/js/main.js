@@ -511,6 +511,7 @@ const gameData = [
 var x = window.matchMedia("(max-width: 768px)")
 var y = window.matchMedia("(max-width: 390px)")
 
+
 document.querySelector("#close").addEventListener("click", () => {
   document.querySelector(".popup").style.visibility = "hidden";
   document.querySelector(".popup").style.opacity = "0";
@@ -528,6 +529,8 @@ document.querySelector("#close").addEventListener("click", () => {
   // }
  
 })
+
+
 
 
 

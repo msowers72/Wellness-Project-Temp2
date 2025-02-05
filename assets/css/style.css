@@ -2673,7 +2673,7 @@ ul .custom-drop.li .custom-link a {
 
 /* This is the styles for the popup box */
 .popup {
-   max-width: 600px;
+   max-width: 450px;
    height: auto;
    
   margin-top: 20px;
@@ -2701,10 +2701,25 @@ ul .custom-drop.li .custom-link a {
 }
 
 .popup p {
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-align: justify;
   margin: 0  0;
   
+}
+
+#hideMe {
+  -webkit-animation: cssAnimation 5s forwards; 
+  animation: cssAnimation 5s forwards;
+}
+@keyframes cssAnimation {
+  0%   {opacity: 1;}
+  90%  {opacity: 0.8;}
+  100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+  0%   {opacity: 1;}
+  90%  {opacity: 0.8;}
+  100% {opacity: 0;}
 }
 
 /* #header.active1 a, p.custom-para-text {
@@ -2725,7 +2740,7 @@ ul .custom-drop.li .custom-link a {
 .lg-red-text-header {
   font-weight: bold;
   color: #CD143C;
-  font-size: 2.5rem;
+  font-size: 1.2rem;
 }
 
 /*******************************************  Begin css for the diagram link pages *****************************/
@@ -2899,12 +2914,16 @@ ul.nbhrl li:last-child a {
   #hero.hero.hero {
     height: 65vh;
 }
+
+.lg-red-text-header {
+  font-size: 1.2rem;
+}
 }
 
 @media(max-width: 1280px) {
   .lg-red-text-header {
     
-    font-size: 1.55rem;
+    font-size: 1.2rem;
 }
 
 #hero .hero-container {
@@ -2916,7 +2935,7 @@ ul.nbhrl li:last-child a {
 }
 
 .popup p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: justify;
   margin: 0  0;
 }
@@ -2940,7 +2959,7 @@ ul.nbhrl li:last-child a {
 .lg-red-text-header {
   font-weight: bold;
   color: #CD143C;
-  font-size: 2.0rem;
+  font-size: 1.2rem;
 }
 }
 
